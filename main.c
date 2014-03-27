@@ -38,7 +38,6 @@ int main(int argc, char**argv)
         //printf("connected (%d)\n", connfd);
         
         
-        //request switch
         char *basicAdd = "/Users/youngnam/Desktop/network/utopia";
         char *plusAdd;
         char finalAdd[100];
@@ -57,7 +56,8 @@ int main(int argc, char**argv)
                 split = strtok(NULL, " ");
                 i++;
             }
-            
+
+           //switch 
             compare = strcmp(plusAdd, "/");  
             if (compare == 0){
                 sprintf(finalAdd, "%s%s", basicAdd, "/index.html");
